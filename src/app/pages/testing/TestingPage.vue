@@ -1,33 +1,44 @@
 <template>
   <div class="container">
-    <h1>This is a Testing Page</h1>
-    <p>You can do some test in your components in this page</p>
+    <typography :variant="'h1'" :color="'purple'" :light="'500'">
+      Hello, <span class="text-underline">there</span>. Welcome to Testing Page
+    </typography>
+    <typography
+      :variant="'body-2'"
+      :color="'blue'"
+      :text="'You can do some tests here about your components'"></typography>
+      <typography
+        :variant="'body-1'"
+        :color="'red'"
+        :text="'Are you ready?'"
+        :fontBold="true"></typography>
     <hr>
   </div>
 </template>
 
 <script>
+import Typography from '@/app/shared/modules/components/Typography/Typography.vue'
+
 export default {
-  name: 'TestingPage'
+  name: 'TestingPage',
+  components: {
+    Typography
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/index.scss';
+@use '@/assets/styles/global/colors' as *;
 .container {
-  h1 {
-    color: $primary-blue-900;
-  }
-
-  p {
-    color: $primary-blue-800;
-  }
-
   hr {
     height: 1px;
 
     background: $primary-blue-700;
     border: none;
+  }
+
+  .text-underline {
+    text-decoration: underline;
   }
 }
 </style>
