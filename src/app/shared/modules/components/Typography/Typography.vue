@@ -57,17 +57,6 @@ export default {
 </script>
 
 <style lang="scss">
-@use '@/assets/styles/global/colors' as *;
-@use '@/assets/styles/global/typography' as *;
-
-@each $color in $colors {
-  @each $light in $lights {
-    .text-#{$color}-#{$light} {
-      color: map-get($map: map-get($map: $colors-map, $key: $color), $key: $light);
-    }
-  }
-}
-
 .bold {
   font-weight: bold;
 }

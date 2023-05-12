@@ -133,3 +133,14 @@ $colors-map: (
     '700': $neutral-700,
   ),
 );
+
+@each $item, $color in $colors-map {
+  @each $light, $value in $color {
+    .bg-#{$item}-#{$light} {
+      background-color: $value;
+    }
+    .text-#{$item}-#{$light} {
+      color: $value;
+    }
+  }
+}
