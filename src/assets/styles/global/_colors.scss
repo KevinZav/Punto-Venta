@@ -1,3 +1,5 @@
+$colors: 'blue', 'purple', 'red', 'green', 'yellow', 'black', 'neutral';
+
 $primary-blue-100: #bbdefb;
 $primary-blue-200: #90caf9;
 $primary-blue-300: #64b5f6;
@@ -48,14 +50,86 @@ $primary-yellow-700: #ffa200;
 $primary-yellow-800: #fe9100;
 $primary-yellow-900: #fe9100;
 
-$black: #000000;
+$black-700: #000000;
 $black-600: #212223;
 $black-500: #393a3f;
 $black-400: #5f636a;
 $black-300: #a4a8ae;
 
-$neutral: #b8bec9;
+$neutral-700: #b8bec9;
 $neutral-600: #d5d8df;
 $neutral-500: #f2f3f6;
 $neutral-400: #fbfcfc;
 $neutral-300: #ffffff;
+
+$colors-map: (
+  'blue': (
+    '100': $primary-blue-100,
+    '200': $primary-blue-200,
+    '300': $primary-blue-300,
+    '400': $primary-blue-400,
+    '500': $primary-blue-500,
+    '600': $primary-blue-500,
+    '700': $primary-blue-700,
+    '800': $primary-blue-800,
+    '900': $primary-blue-900,
+  ),
+  'purple': (
+    '100': $primary-purple-100,
+    '200': $primary-purple-200,
+    '300': $primary-purple-300,
+    '400': $primary-purple-400,
+    '500': $primary-purple-500,
+    '600': $primary-purple-500,
+    '700': $primary-purple-700,
+    '800': $primary-purple-800,
+    '900': $primary-purple-900,
+  ),
+  'red': (
+    '100': $primary-red-100,
+    '200': $primary-red-200,
+    '300': $primary-red-300,
+    '400': $primary-red-400,
+    '500': $primary-red-500,
+    '600': $primary-red-500,
+    '700': $primary-red-700,
+    '800': $primary-red-800,
+    '900': $primary-red-900,
+  ),
+  'green': (
+    '100': $primary-green-100,
+    '200': $primary-green-200,
+    '300': $primary-green-300,
+    '400': $primary-green-400,
+    '500': $primary-green-500,
+    '600': $primary-green-500,
+    '700': $primary-green-700,
+    '800': $primary-green-800,
+    '900': $primary-green-900,
+  ),
+  'yellow': (
+    '100': $primary-yellow-100,
+    '200': $primary-yellow-200,
+    '300': $primary-yellow-300,
+    '400': $primary-yellow-400,
+    '500': $primary-yellow-500,
+    '600': $primary-yellow-500,
+    '700': $primary-yellow-700,
+    '800': $primary-yellow-800,
+    '900': $primary-yellow-900,
+  ),
+  'black': (
+    '300': $black-300,
+    '400': $black-400,
+    '500': $black-500,
+    '600': $black-600,
+    '700': $black-700,
+  ),
+  'neutral': (
+    '300': $neutral-300,
+    '400': $neutral-400,
+    '500': $neutral-500,
+    '600': $neutral-600,
+    '700': $neutral-700,
+  ),
+);
