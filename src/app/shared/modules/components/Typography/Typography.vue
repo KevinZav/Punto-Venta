@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { typographyLights, typographyTags, colors } from '@/app/shared/constants'
+import { typographyTags } from '@/app/shared/constants'
 import TagTypography from './TagTypography.vue'
 
 export default {
@@ -27,19 +27,8 @@ export default {
       type: Boolean,
       default: false
     },
-    light: {
-      type: String,
-      default: '700',
-      validator (value) {
-        return typographyLights.includes(value)
-      }
-    },
     color: {
       type: String,
-      default: 'black',
-      validator (value) {
-        return colors.includes(value)
-      }
     },
     extraStyles: {
       type: String,
@@ -48,9 +37,9 @@ export default {
   },
   computed: {
     assignClass () {
-      const { color, light, extraStyles, fontBold} = this
+      const { color, extraStyles, fontBold} = this
 
-      return `${extraStyles} text-${color}-${light} ${fontBold ? 'bold' : ''}`
+      return `${extraStyles} ${color ? `text-${color}` : ''} ${fontBold ? 'bold' : ''}`
     }
   }
 }
