@@ -11,7 +11,8 @@ export const typographyTags = [
   "body-2",
   "body-3",
   "label",
-  "metadata"
+  "metadata",
+  "button"
 ];
 
 export const typographyLights = [ '700', '500', '400', '300' ];

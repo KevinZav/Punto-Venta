@@ -1,0 +1,20 @@
+export const buttonTypes = [
+  "primary",
+  "secondary",
+  "alternative",
+  "dark",
+  "light",
+  "green",
+  "red",
+  "yellow",
+  "purple",
+  "primary-outline",
+  "secondary-outline",
+  "dark-outline",
+  "green-outline",
+  "red-outline",
+  "yellow-outline",
+  "purple-outline",
+  "pill",
+  "icon"
+];

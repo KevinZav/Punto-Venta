@@ -1,24 +1,14 @@
-$colors: 'blue', 'purple', 'red', 'green', 'yellow', 'black', 'neutral';
+$colors: 'blue', 'red', 'green', 'yellow', 'black', 'neutral';
 
-$primary-blue-100: #bbdefb;
-$primary-blue-200: #90caf9;
-$primary-blue-300: #64b5f6;
-$primary-blue-400: #42a5f5;
-$primary-blue-500: #2196f3;
-$primary-blue-600: #1e88e5;
-$primary-blue-700: #1976d2;
-$primary-blue-800: #1565c0;
-$primary-blue-900: #0d47a1;
-
-$primary-purple-100: #cdc5ef;
-$primary-purple-200: #ad9ee5;
-$primary-purple-300: #8b75dd;
-$primary-purple-400: #7058d4;
-$primary-purple-500: #7058d4;
-$primary-purple-600: #4637c7;
-$primary-purple-700: #3430bd;
-$primary-purple-800: #1f2ab5;
-$primary-purple-900: #0120a9;
+$primary-blue-100: #f2f7ff;
+$primary-blue-200: #dceaff;
+$primary-blue-300: #b5dbff;
+$primary-blue-400: #8ccaf6;
+$primary-blue-500: #66b8ed;
+$primary-blue-600: #4ba0e3;
+$primary-blue-700: #2d89da;
+$primary-blue-800: #1a77d1;
+$primary-blue-900: #0466c8;
 
 $primary-red-100: #facbbf;
 $primary-red-200: #f8aa96;
@@ -73,17 +63,6 @@ $colors-map: (
     '700': $primary-blue-700,
     '800': $primary-blue-800,
     '900': $primary-blue-900,
-  ),
-  'purple': (
-    '100': $primary-purple-100,
-    '200': $primary-purple-200,
-    '300': $primary-purple-300,
-    '400': $primary-purple-400,
-    '500': $primary-purple-500,
-    '600': $primary-purple-500,
-    '700': $primary-purple-700,
-    '800': $primary-purple-800,
-    '900': $primary-purple-900,
   ),
   'red': (
     '100': $primary-red-100,
