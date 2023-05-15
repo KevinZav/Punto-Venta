@@ -13,16 +13,22 @@
         :text="'Are you ready?'"
         :fontBold="true"></typography>
     <hr>
+    <person-tag nameColor="blue" imgAvatar="" namePerson="La chata"></person-tag>
+    <br>
+    <person-tag nameColor="purple" imgAvatar="" namePerson="Alan Eduardo"></person-tag>
+    <br>
+    <person-tag nameColor="yellow" imgAvatar="" namePerson="La bambina"></person-tag>
   </div>
 </template>
 
 <script>
 import Typography from '@/app/shared/modules/components/Typography/Typography.vue'
-
+import PersonTag from '@/app/shared/modules/components/PersonTag/PersonTag.vue'
 export default {
   name: 'TestingPage',
   components: {
-    Typography
+    Typography,
+    PersonTag
   }
 }
 </script>
