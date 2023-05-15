@@ -1,0 +1,79 @@
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+  button.button {
+    @apply inline-flex items-center rounded-lg px-5 py-2.5 hover:cursor-pointer;
+
+    &.pill {
+      @apply rounded-full;
+    }
+
+    &.icon {
+      @apply rounded-full justify-center p-3;
+    }
+
+    &.button-primary {
+      @apply text-white bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700;
+    
+      &-outline {
+        @apply text-primary-700 hover:text-white border border-primary-700 hover:bg-primary-800 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-500;
+      }
+    }
+
+    &.button-secondary {
+      @apply text-white bg-secondary-700 hover:bg-secondary-800 dark:bg-secondary-600 dark:hover:bg-secondary-700;
+
+      &-outline {
+        @apply text-secondary-700 hover:text-white border border-secondary-700 hover:bg-secondary-800 dark:border-secondary-500 dark:text-secondary-500 dark:hover:text-white dark:hover:bg-secondary-500;
+      }
+    }
+
+    &.button-alternative {
+      @apply text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700;
+    }
+
+    &.button-dark {
+      @apply text-white bg-gray-800 hover:bg-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700;
+    
+      &-outline {
+        @apply text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600;
+      }
+    }
+
+    &.button-light {
+      @apply text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600;
+    }
+
+    &.button-green {
+      @apply text-white bg-green-700 hover:bg-green-800 dark:bg-green-600 dark:hover:bg-green-700;
+
+      &-outline {
+        @apply text-green-700 hover:text-white border border-green-700 hover:bg-green-800 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600;
+      }
+    }
+    
+    &.button-red {
+      @apply text-white bg-red-700 hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-700;
+
+      &-outline {
+        @apply text-red-700 hover:text-white border border-red-700 hover:bg-red-800 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600;
+      }
+    }
+
+    &.button-yellow {
+      @apply text-white bg-yellow-400 hover:bg-yellow-500;
+
+      &-outline {
+        @apply text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400;
+      }
+    }
+
+    &.button-purple {
+      @apply text-white bg-purple-700 hover:bg-purple-800 dark:bg-purple-600 dark:hover:bg-purple-700;
+
+      &-outline {
+        @apply text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500;
+      }
+    }
+  }
+}
