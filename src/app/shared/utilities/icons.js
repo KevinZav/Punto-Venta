@@ -3,6 +3,10 @@ import {
   MoonIcon,
   ArrowLongRightIcon,
   PencilSquareIcon,
+  Bars3Icon,
+  Bars3CenterLeftIcon,
+  Bars3BottomLeftIcon,
+  EllipsisVerticalIcon
 } from "@heroicons/vue/24/solid";
 
 export const heroIcons = {
@@ -10,4 +14,8 @@ export const heroIcons = {
   MoonIcon,
   ArrowLongRightIcon,
   PencilSquareIcon,
+  Bars3Icon,
+  Bars3CenterLeftIcon,
+  Bars3BottomLeftIcon,
+  EllipsisVerticalIcon
 };
