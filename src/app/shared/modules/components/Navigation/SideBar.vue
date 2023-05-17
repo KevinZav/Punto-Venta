@@ -10,7 +10,7 @@
             class="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 hover:text-primary-300">
             <icon
               :icon="navigator.icon"
-              :size="6"
+              :size="'24px'"
               :extraClass="'transition duration-75'"></icon>
             <typography :variant="'body-2'" :text="navigator.text" :extraStyles="'ml-3'"></typography>
           </router-link>
