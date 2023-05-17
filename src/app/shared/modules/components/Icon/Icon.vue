@@ -1,5 +1,7 @@
 <template>
-  <component :is="icon" :class="assignClass"></component>
+  <span :style="{ 'width': `${size}`, height: `${size}` }">
+    <component :is="icon" :class="assignClass"></component>
+  </span>
 </template>
 <script>
 import { heroIcons } from "@/app/shared/utilities/icons";
@@ -16,7 +18,7 @@ export default {
     },
     size: {
       type: String,
-      default: "4",
+      default: "16px",
     },
     color: {
       type: String,
@@ -27,12 +29,17 @@ export default {
   },
   computed: {
     assignClass() {
-      const { size, color, extraClass } = this;
+      const { color, extraClass } = this;
 
-      return `w-[${size}] w-${size} aspect-square ${
-        color ? `text-${color}` : ""
-      } ${extraClass}`;
+      return `aspect-square ${color ? `text-${color}` : ""
+        } ${extraClass}`;
     },
+    assignStyle() {
+      return {
+        width: `${this.size}px`,
+        height: `${this.size}px`
+      }
+    }
   },
 };
 </script>
