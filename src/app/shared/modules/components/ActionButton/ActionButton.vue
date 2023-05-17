@@ -2,6 +2,7 @@
   <button type="button" :class="assignClass" @click="$emit('onClick', null)">
     <icon v-if="icon" :icon="icon"/>
     <typography v-if="!!text" :text="text" :variant="'button'"></typography>
+    <slot v-if="!icon && !text"></slot>
   </button>
 </template>
 <script>
