@@ -27,10 +27,24 @@
     </div>
     <div>
       <h3>Indicators</h3>
-      <indicators :variant="'purple'" :text="'Hellouw'"/>
-      <indicators :variant="'blue'" :text="'Hellouw'"/>
-      <indicators :variant="'indigo'" :text="'Hellouw'"/>
-      <indicators :variant="'teal'" :text="'Hellouw'"/>
+      <indicators :variantColor="'purple'">
+        <typography
+          :variant="'body-1'"
+          :color="'black-100'"
+          :text="'Hellouw Alan'"
+          :fontBold="false">
+        </typography>
+      </indicators>
+
+      <indicators :variantColor="'blue'">
+        <typography
+          :variant="'body-1'"
+          :color="'black-100'"
+          :text="'Hellouw Alan'"
+          :fontBold="false">
+        </typography>
+      </indicators>
+
     </div>
   </div>
 </template>
