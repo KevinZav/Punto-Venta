@@ -1,0 +1,21 @@
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+  .indicator{
+    @apply flex w-2.5 h-2.5 rounded-full mr-1.5 flex-shrink-0; 
+    
+    &.indicator-blue {
+      @apply bg-blue-600;
+    }
+
+    &.indicator-purple {
+      @apply bg-purple-500;
+    }
+    &.indicator-indigo {
+      @apply bg-indigo-500;
+    }
+    &.indicator-teal {
+      @apply bg-teal-500;
+    }
+  }
+}

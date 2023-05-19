@@ -25,6 +25,13 @@
         </div>
       </div>
     </div>
+    <div>
+      <h3>Indicators</h3>
+      <indicators :variant="'purple'" :text="'Hellouw'"/>
+      <indicators :variant="'blue'" :text="'Hellouw'"/>
+      <indicators :variant="'indigo'" :text="'Hellouw'"/>
+      <indicators :variant="'teal'" :text="'Hellouw'"/>
+    </div>
   </div>
 </template>
 
@@ -33,6 +40,7 @@ import Typography from '@/app/shared/modules/components/Typography/Typography.vu
 import ActionButton from '@/app/shared/modules/components/ActionButton/ActionButton.vue'
 import Navbar from '@/app/shared/modules/components/Navigation/Navbar.vue'
 import SideBar from '@/app/shared/modules/components/Navigation/SideBar.vue'
+import Indicators from '@/app/shared/modules/components/Indicators/Indicators.vue'
 
 export default {
   name: 'TestingPage',
@@ -40,7 +48,8 @@ export default {
     Typography,
     ActionButton,
     Navbar,
-    SideBar
+    SideBar,
+    Indicators
   },
   methods: {
     onClickButton() {
