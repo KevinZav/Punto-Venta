@@ -3,4 +3,8 @@ export const indicatorsTypes = [
     "purple",
     "indigo",
     "teal",
+    "gray",
+    "green",
+    "red",
+    "yellow",
   ];

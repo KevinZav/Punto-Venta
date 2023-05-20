@@ -17,5 +17,17 @@
     &.indicator-teal {
       @apply bg-teal-500;
     }
+    &.indicator-green {
+      @apply bg-green-500;
+    }
+    &.indicator-red {
+      @apply bg-red-500;
+    }
+    &.indicator-gray {
+      @apply bg-gray-500;
+    }
+    &.indicator-yellow {
+      @apply bg-yellow-500;
+    }
   }
 }

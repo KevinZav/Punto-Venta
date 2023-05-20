@@ -27,24 +27,7 @@
     </div>
     <div>
       <h3>Indicators</h3>
-      <indicators :variantColor="'purple'">
-        <typography
-          :variant="'body-1'"
-          :color="'black-100'"
-          :text="'Hellouw Alan'"
-          :fontBold="false">
-        </typography>
-      </indicators>
-
-      <indicators :variantColor="'blue'">
-        <typography
-          :variant="'body-1'"
-          :color="'black-100'"
-          :text="'Hellouw Alan'"
-          :fontBold="false">
-        </typography>
-      </indicators>
-
+      <indicators :variant="'yellow'" :colorText="'blue-600'" :text="'Desde la importacion'" />
     </div>
   </div>
 </template>
