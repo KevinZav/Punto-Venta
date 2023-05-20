@@ -27,7 +27,7 @@
     </div>
     <div>
       <h3>Indicators</h3>
-      <indicators :variant="'yellow'" :colorText="'blue-600'" :text="'Desde la importacion'" />
+      <indicator :variant="'yellow'" :colorText="'blue-600'" :text="'Desde la importacion'" />
     </div>
   </div>
 </template>
@@ -37,7 +37,7 @@ import Typography from '@/app/shared/modules/components/Typography/Typography.vu
 import ActionButton from '@/app/shared/modules/components/ActionButton/ActionButton.vue'
 import Navbar from '@/app/shared/modules/components/Navigation/Navbar.vue'
 import SideBar from '@/app/shared/modules/components/Navigation/SideBar.vue'
-import Indicators from '@/app/shared/modules/components/Indicators/Indicators.vue'
+import Indicator from '@/app/shared/modules/components/Indicators/Indicators.vue'
 
 export default {
   name: 'TestingPage',
@@ -46,7 +46,7 @@ export default {
     ActionButton,
     Navbar,
     SideBar,
-    Indicators
+    Indicator
   },
   methods: {
     onClickButton() {

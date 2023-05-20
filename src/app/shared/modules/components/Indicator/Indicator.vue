@@ -9,7 +9,7 @@
 import {indicatorsTypes} from '@/app/shared/constants/indicators-types';
 import TypographyComponent from '@/app/shared/modules/components/Typography/Typography.vue'
 export default {
-    name: 'IndicatorsComponent',
+    name: 'IndicatorComponent',
     components: {
         TypographyComponent,       
     },
