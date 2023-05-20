@@ -38,6 +38,8 @@
         :setVariantByStatus="true"></input-text>
     </div>
   </div>
+  <custom-badge-vue :variant="'purple'" :text="'adios'"></custom-badge-vue>
+  <custom-badge-vue :variant="'green'" :extraClass="'badge-yellow-bordered pill'" :text="'holiwis'"></custom-badge-vue>
 </template>
 
 <script>
@@ -47,6 +49,7 @@ import Navbar from '@/app/shared/modules/components/Navigation/Navbar.vue'
 import SideBar from '@/app/shared/modules/components/Navigation/SideBar.vue'
 import Indicator from '@/app/shared/modules/components/Indicator/Indicator.vue'
 import InputText from '@/app/shared/modules/components/inputs/InputText.vue'
+import CustomBadgeVue from '@/app/shared/modules/components/Badge/CustomBadge.vue'
 
 export default {
   name: 'TestingPage',
@@ -64,6 +67,7 @@ export default {
         name: ''
       }
     }
+    CustomBadgeVue
   },
   methods: {
     onClickButton() {
