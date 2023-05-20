@@ -20,16 +20,20 @@
       </div>
     </div>
   </div>
+  <custom-badge-vue :variant="'purple'" :text="'adios'"></custom-badge-vue>
+  <custom-badge-vue :variant="'pink'" :extraClass="'red-bordered pink-large pink-pills'" :text="'holiwis'"></custom-badge-vue>
 </template>
 
 <script>
 import Typography from '@/app/shared/modules/components/Typography/Typography.vue'
 import ActionButton from '@/app/shared/modules/components/ActionButton/ActionButton.vue'
+import CustomBadgeVue from '@/app/shared/modules/components/Badge/CustomBadge.vue'
 export default {
   name: 'TestingPage',
   components: {
     Typography,
-    ActionButton
+    ActionButton,
+    CustomBadgeVue
   },
   methods: {
     onClickButton () {
