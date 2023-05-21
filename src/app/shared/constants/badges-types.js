@@ -7,4 +7,6 @@ export const badgesTypes = [
     "indigo",
     "purple",
     "pink",
+    "pill",
+    "large",
   ];

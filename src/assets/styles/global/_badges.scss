@@ -1,7 +1,7 @@
 @import 'tailwindcss/utilities';
 @layer utilities {
     .badge{
-        @apply text-xs font-medium mr-2 px-2.5 py-0.5 rounded;
+        @apply inline-flex font-medium px-2.5 py-0.5 rounded;
         
         &.badge-blue {
             @apply bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300;
