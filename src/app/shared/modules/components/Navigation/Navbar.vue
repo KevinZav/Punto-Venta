@@ -20,7 +20,7 @@
               <action-button
                 aria-expanded="false"
                 data-dropdown-toggle="dropdown-user"
-                :variant="'dark'"
+                :variant="'dark icon'"
                 :extraClass="'flex bg-gray-800 rounded-full !p-0'">
                 <span class="sr-only">Open user menu</span>
                 <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"

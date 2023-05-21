@@ -37,7 +37,7 @@ import Typography from '@/app/shared/modules/components/Typography/Typography.vu
 import ActionButton from '@/app/shared/modules/components/ActionButton/ActionButton.vue'
 import Navbar from '@/app/shared/modules/components/Navigation/Navbar.vue'
 import SideBar from '@/app/shared/modules/components/Navigation/SideBar.vue'
-import Indicator from '@/app/shared/modules/components/Indicators/Indicators.vue'
+import Indicator from '@/app/shared/modules/components/Indicator/Indicator.vue'
 
 export default {
   name: 'TestingPage',
