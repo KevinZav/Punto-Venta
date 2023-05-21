@@ -76,7 +76,6 @@ export default {
   },
   watch: {
     async modelValue(value) {
-
       if (!this.setVariantByStatus || !this.validators) return
 
       const { SUCCESS, ERROR, PENDING } = inputStatus
@@ -84,8 +83,8 @@ export default {
       this.status = PENDING
 
       const [validators, asyncValidators] = this.validators
-      const evalValidators = this.evalValidator(validators, value)
-      const evalAsyncValidators = await this.evalValidatorAsync(asyncValidators, value)
+      const evalValidators = validators ? this.evalValidator(validators, value) : true
+      const evalAsyncValidators = asyncValidators ? await this.evalValidatorAsync(asyncValidators, value) : true
       
       this.status = evalValidators && evalAsyncValidators ? SUCCESS : ERROR
     }
