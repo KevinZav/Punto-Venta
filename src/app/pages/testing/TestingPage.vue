@@ -38,6 +38,11 @@
         :setVariantByStatus="true"></input-text>
     </div>
   </div>
+  <badge :variant="'purple'" :text="'adios'"></badge>
+  <badge :variant="'green'" :extraClass="'badge-yellow-bordered pill'" :text="'holiwis'"></badge>
+  <div class="inline ml-2">
+  <badge :variant="'purple pill'" :text="'holiwis'" :extraClass="'mr-2'"></badge>
+  </div>
 </template>
 
 <script>
@@ -47,6 +52,7 @@ import Navbar from '@/app/shared/modules/components/Navigation/Navbar.vue'
 import SideBar from '@/app/shared/modules/components/Navigation/SideBar.vue'
 import Indicator from '@/app/shared/modules/components/Indicator/Indicator.vue'
 import InputText from '@/app/shared/modules/components/inputs/InputText.vue'
+import Badge from '@/app/shared/modules/components/Badge/Badge.vue'
 
 export default {
   name: 'TestingPage',
@@ -56,7 +62,8 @@ export default {
     Navbar,
     SideBar,
     Indicator,
-    InputText
+    InputText,
+    Badge
   },
   data () {
     return {
