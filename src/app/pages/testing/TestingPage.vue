@@ -28,6 +28,14 @@
     <div>
       <h3>Indicators</h3>
       <indicator :variant="'yellow'" :colorText="'blue-600'" :text="'Desde la importacion'" />
+      <h3>Input Text</h3>
+      <input-text
+        v-model="user.name"
+        :variant="'primary'"
+        :labelText="'Ingrese su nombre'"
+        :placeholder="'Ejemplo: Kevin'"
+        :validators="[noNameValidator]"
+        :setVariantByStatus="true"></input-text>
     </div>
   </div>
 </template>
@@ -38,6 +46,7 @@ import ActionButton from '@/app/shared/modules/components/ActionButton/ActionBut
 import Navbar from '@/app/shared/modules/components/Navigation/Navbar.vue'
 import SideBar from '@/app/shared/modules/components/Navigation/SideBar.vue'
 import Indicator from '@/app/shared/modules/components/Indicator/Indicator.vue'
+import InputText from '@/app/shared/modules/components/inputs/InputText.vue'
 
 export default {
   name: 'TestingPage',
@@ -46,11 +55,22 @@ export default {
     ActionButton,
     Navbar,
     SideBar,
-    Indicator
+    Indicator,
+    InputText
+  },
+  data () {
+    return {
+      user: {
+        name: ''
+      }
+    }
   },
   methods: {
     onClickButton() {
       alert(`It's Britney, bitch!`)
+    },
+    noNameValidator (value) {
+      return !['Caste', 'Isac'].includes(value)
     }
   }
 }
