@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :class="assignClass" @click="$emit('onClick', null)">
+  <button :type="type" :class="assignClass" @click="$emit('onClick', null)">
     <icon v-if="icon" :icon="icon"/>
     <typography v-if="!!text" :text="text" :variant="'button'"></typography>
     <slot v-if="!icon && !text"></slot>
@@ -26,6 +26,13 @@ export default{
       required: true,
       validator (value) {
         return value.split(' ').every(item => buttonTypes.includes(item))
+      }
+    },
+    type: {
+      type: String,
+      default: 'button',
+      validator (value) {
+        return ['button', 'submit'].includes(value)
       }
     },
     icon: {
