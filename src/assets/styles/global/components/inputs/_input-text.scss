@@ -2,20 +2,23 @@
 
 @layer utilities {
   .input-text-floating {
+    background-color: inherit;
+
     input {
       @apply block px-2.5 pb-2.5 pt-4 w-full text-sm bg-transparent rounded-lg border-[1px] border-secondary-300 appearance-none focus:outline-none focus:ring-0;
       
       &::placeholder {
-        @apply text-white;
+        @apply text-transparent;
 
         &:focus {
-          @apply text-secondary-400;
+          @apply text-secondary-800;
         }
       }
     }
 
     label {
-      @apply absolute text-sm text-secondary-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 left-1;
+      background-color: inherit;
+      @apply absolute text-sm text-secondary-800 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 left-1;
     }
 
     .activate {
